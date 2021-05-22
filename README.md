@@ -12,7 +12,7 @@ Start the server in production with 'yarn start' or for development with 'yarn d
 1. add support for ttl on top of lru
 1. add locking to make lru cache thread safe
 1. add the ability to use async getter functions when calling getOrSet (cache calls getter, if the return value is a promise it is awaited) 
-1. replace the lionked list with a cache oblivious data structure to improve performance
+1. replace the linked list with a cache oblivious data structure to improve performance
 
 # DONE:
 

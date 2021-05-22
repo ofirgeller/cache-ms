@@ -1,5 +1,5 @@
-import { ForbiddenException, HttpCode, HttpStatus, Param, Query, Req, Res } from '@nestjs/common';
-import { BadRequestException, Controller, Delete, Get, NotFoundException, Post } from '@nestjs/common';
+import { ForbiddenException, HttpCode, Query, Req } from '@nestjs/common';
+import { Controller, Delete, Get, NotFoundException, Post } from '@nestjs/common';
 import { FastifyRequest } from 'fastify'
 import { LRU } from './LRU';
 const isLoopbackAddr = require('is-loopback-addr');
@@ -15,7 +15,6 @@ export class CacheController {
     CacheController._cache.delete(key);
   }
 
-  // @Delete('deleteAll') 
   @Get('deleteAll')
   @HttpCode(204)
   deleteAll(@Req() request: FastifyRequest) {

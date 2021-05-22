@@ -18,7 +18,7 @@ module.exports = {
     "no-unused-vars": ['warn'],
     "indent": ["error", 2],
     'quotes': ["error", "single"],
-    "@typescript-eslint/no-empty-function": ["warning"],
+    "@typescript-eslint/no-empty-function": ["warn"],
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
